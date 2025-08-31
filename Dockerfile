@@ -5,6 +5,10 @@ FROM base AS builder
 WORKDIR /usr/src/app
 RUN mkdir -p /usr/src/final/ /usr/src/final/dist/
 
+# Environment variable that points to navigator.
+ARG VITE_DATASPEC_NAVIGATOR_URL
+ENV VITE_DATASPEC_NAVIGATOR_URL=$VITE_DATASPEC_NAVIGATOR_URL
+
 COPY applications/ applications/
 COPY services/ services/
 COPY packages/ packages/
