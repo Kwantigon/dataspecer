@@ -4,6 +4,8 @@ This repository was forked from the main Dataspecer repository to implement chan
 
 ## Implemented feature
 
+Each package now has a "Ask in navigator" button in its dropdown menu, which redirects the user to the Data specification navigator with the correct parameters in the URL.
+
 ## Installation
 
 Clone the repository
